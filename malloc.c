@@ -88,7 +88,7 @@ void			*malloc(size_t size)
   t_block		*newBase;
   t_block		*ptr;
 
-  if (size <= 0)
+  if ((int)size <= 0)
     return (NULL);
   else if (g_block == NULL)
     {
